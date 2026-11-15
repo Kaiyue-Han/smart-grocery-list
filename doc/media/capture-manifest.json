@@ -1,0 +1,126 @@
+{
+  "frames": 185,
+  "fps": 5,
+  "chapters": [
+    {
+      "first_frame": 0,
+      "caption": "01 / Browse the grocery catalogue"
+    },
+    {
+      "first_frame": 15,
+      "caption": "02 / Search the catalogue by name"
+    },
+    {
+      "first_frame": 25,
+      "caption": "03 / Add Apple through the catalogue button"
+    },
+    {
+      "first_frame": 40,
+      "caption": "04 / Review the shopping list"
+    },
+    {
+      "first_frame": 50,
+      "caption": "05 / Edit quantity; save 2 Apples to MariaDB"
+    },
+    {
+      "first_frame": 65,
+      "caption": "06 / Filter to Apple; hidden Bread stays selected"
+    },
+    {
+      "first_frame": 80,
+      "caption": "07 / Purchase only the visible selected Apple"
+    },
+    {
+      "first_frame": 90,
+      "caption": "08 / Bread remains on the shopping list"
+    },
+    {
+      "first_frame": 100,
+      "caption": "09 / Purchase history preserves date, unit and quantity"
+    },
+    {
+      "first_frame": 110,
+      "caption": "10 / Combine name search and an inclusive date range"
+    },
+    {
+      "first_frame": 125,
+      "caption": "11 / Reset restores the complete purchase history"
+    },
+    {
+      "first_frame": 135,
+      "caption": "12 / Import a semicolon-separated CSV file"
+    },
+    {
+      "first_frame": 145,
+      "caption": "13 / Identical CSV content is skipped"
+    },
+    {
+      "first_frame": 165,
+      "caption": "14 / Replenishment and related-item suggestions"
+    }
+  ],
+  "main_database_counts_unchanged": true,
+  "rendering": "Production FXML at 1280x720; scripted JavaFX controls/handlers; screenshots are actual JavaFX scene snapshots",
+  "checks": [
+    "Hidden selected Bread preserved",
+    "Apple quantity 2 persisted to history",
+    "Repeated CSV quantity stays 3"
+  ],
+  "capture_date": "2026-11-15",
+  "duration_seconds": 37,
+  "video_dimensions": [
+    1280,
+    800
+  ],
+  "application_dimensions": [
+    1280,
+    720
+  ],
+  "audio": false,
+  "synthetic_data": true,
+  "source_commit": "2829771fc7680d6383264656a98f728a44a97323",
+  "ui_modified_for_capture": false,
+  "caption_band_outside_application": true,
+  "assets": [
+    {
+      "file": "catalogue.png",
+      "bytes": 138674,
+      "sha256": "d488aa4593b6a86ed02d8cce8e0e5d5fc5e1f17fb176d8413a70d15b70fa3309"
+    },
+    {
+      "file": "csv-import.png",
+      "bytes": 49749,
+      "sha256": "4a1ab3552d852efbaa5fdc5a8dbbc3227a34b879869a79bc7b1eaa61da74790c"
+    },
+    {
+      "file": "demo-preview.gif",
+      "bytes": 2251816,
+      "sha256": "5d8ccbcb1ec2dd216df0dee4353ccd70a079cbf2a91676f614909cdaa10e6407"
+    },
+    {
+      "file": "purchase-history-overview.png",
+      "bytes": 45417,
+      "sha256": "06f1eb204028062caa5a4c6eeab76d05097a6ef63b5fa4bc57cc6779ef0dddc8"
+    },
+    {
+      "file": "purchase-history.png",
+      "bytes": 33051,
+      "sha256": "55042c5df576350506fdd34a838e4264bc31b7d2255feeed20a156df1f93b1d1"
+    },
+    {
+      "file": "shopping-list.png",
+      "bytes": 53469,
+      "sha256": "c7431304050d99c40e984ab8161cefd02912e7e318d4d3d367abc2b7176b0c94"
+    },
+    {
+      "file": "smart-grocery-list-demo.mp4",
+      "bytes": 437292,
+      "sha256": "ed09d9479b924b2eadbe13d5986941999a37091c865a2c4345c4192e9e8a6a32"
+    },
+    {
+      "file": "suggestions.png",
+      "bytes": 113052,
+      "sha256": "d2cbff6fcd75d0e59eff163d8e528df1f6f257a597b53729fa2e150ade3a7f2a"
+    }
+  ]
+}

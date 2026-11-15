@@ -29,3 +29,5 @@ Distinguish original coursework contributions from the later portfolio cleanup. 
 ## Later portfolio maintenance
 
 The visible-selection purchase transaction, quantity persistence and four-field history merge corrections were made during this portfolio review. They are separate from the original 2023/24 coursework contributions described above. New regression tests cover persistence, selection boundaries, matching fields and rollback.
+
+The screenshots, scripted demonstration, documentation and additional catalogue/filter/recommendation/CSV maintenance were added in the later portfolio review; they are not evidence of original coursework authorship.

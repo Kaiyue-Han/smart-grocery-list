@@ -29,9 +29,10 @@ Four original GUI failures remain under review: three menu-node queries and repe
 - The buildscript uses dynamic Spring Boot plugin classpath version 2.+. Framework/build upgrades were not included in this correction.
 - Some original test classes are empty or have weak assertions. The two purchase-history unit tests now exercise real nonempty input, and new persistence/rollback regressions were added; this is not complete coverage.
 
-## Before publishing
+## Portfolio presentation and remaining checks
 
-- Complete manual UI workflows, screenshots and a short demonstration.
+- Real screenshots and a scripted 37-second walkthrough are available in [demo](DEMO.md). Complete manual UI acceptance remains outstanding.
+- During capture, some date-picker strings and recommendation reasons were truncated; Windows JavaFX accessibility exceptions also appeared. See the demo limits.
 - Preserve team attribution; exact commit-level ownership still needs original Git history, absent from this snapshot.
 - Local environment files remain excluded from Git. The original report is omitted from the public-facing candidate because it contains student identifiers and personal declarations.
 - Legacy GitLab pipelines under doc/archive/ci are historical. No passing GitHub Actions pipeline is claimed.

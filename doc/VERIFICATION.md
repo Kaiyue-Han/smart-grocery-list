@@ -28,3 +28,7 @@ Repository tests use H2. The existing Byte Buddy agent was preloaded through JAV
 The original external baseline had 13 passes, 8 failed expectations and 1 observation in 22 scenarios. The CSV expectations were then changed according to the owner's decision: CSV only, and skip identical successfully imported file contents. Three more checks cover date reset/upper-bound behavior and transaction rollback. The latest 25 checks pass.
 
 See [known issues](KNOWN_ISSUES.md) for remaining source-level findings and publication prerequisites.
+
+## Visual walkthrough
+
+The [37-second scripted demo and screenshots](DEMO.md) use the production application and an isolated MariaDB database. Capture-specific assertions verified hidden Bread preservation, Apple purchase quantity 2 and identical CSV quantity 3 after repeat import. Main database counts were unchanged. MP4 was fully decoded successfully; GIF duration is 37 seconds. Captured UI frames were inspected. The walkthrough supplies visual evidence, not additional passing TestFX tests or full accessibility acceptance.

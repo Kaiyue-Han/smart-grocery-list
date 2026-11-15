@@ -4,6 +4,14 @@ A university team project (SWT-SWL-B, winter semester 2023/24) for managing a gr
 
 **Project status:** archived coursework with reviewed correctness fixes. All 42 backend tests pass; real MariaDB acceptance passes 25 scenarios. The full suite and remaining UI limitations are documented in [verification](doc/VERIFICATION.md). This is a desktop application, with no hosted web demo.
 
+## See it in action
+
+[Watch/download the 37-second MP4](doc/media/smart-grocery-list-demo.mp4?raw=true) · [Screenshots and walkthrough](doc/DEMO.md) · [Kaiyue Han's contribution](doc/CONTRIBUTIONS.md)
+
+![Live JavaFX workflow: catalogue, shopping list, filtered purchase, history, CSV import and suggestions](doc/media/demo-preview.gif)
+
+Captured from the running JavaFX application with synthetic data in an isolated MariaDB database. This is a scripted session using production controls/handlers; the caption strip is outside the application. No audio. Full-resolution screenshots are available in the walkthrough.
+
 ## What the application does
 
 - Manage catalogue items with names, categories, units and images.
@@ -82,4 +90,4 @@ xtasks/                   Existing application module; original name retained
 
 This is collaborative coursework, not a claim of sole authorship. The portfolio owner is Kaiyue Han; report-supported responsibilities are documented in [contributions](doc/CONTRIBUTIONS.md), with commit-level authorship still unverified. Existing GPL license files are preserved. The original report is intentionally not bundled in this public-facing candidate because it contains student identifiers and personal declarations; prepare a reviewed public copy separately.
 
-Screenshots and a short demonstration should be added after a successful local run. No screenshots, passing-test badges or coverage claims are fabricated here.
+The [visual walkthrough](doc/DEMO.md) shows the running desktop application. Automated checks and remaining manual UI limitations are recorded separately in [verification](doc/VERIFICATION.md).
