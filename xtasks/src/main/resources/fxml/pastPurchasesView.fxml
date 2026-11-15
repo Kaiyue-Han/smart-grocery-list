@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="385.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtasks.javafx.controller.PastPurchasesViewController">
+    <children>
+        <TableView fx:id="tableView" layoutX="6.0" layoutY="67.0" prefHeight="303.0" prefWidth="600.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0">
+            <columns>
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name   ↕" />
+                <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category   ↕" />
+                <TableColumn fx:id="quantityColumn" prefWidth="75.0" sortable="false" text="Quantity" />
+                <TableColumn fx:id="unitColumn" prefWidth="75.0" sortable="false" text="Unit" />
+                <TableColumn fx:id="addDateColumn" prefWidth="123.0" text="Date Purchased   ↕" />
+                <TableColumn fx:id="deleteColumn" prefWidth="75.0" text="Delete" />
+            </columns>
+        </TableView>
+        <TextField fx:id="searchBar" layoutX="425.0" layoutY="8.0" prefHeight="28.0" prefWidth="177.0" promptText="Search item here" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <Text fill="#f7810c" fontSmoothingType="LCD" layoutX="59.0" layoutY="25.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MyShopList" underline="true" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+        <MenuButton fx:id="category" layoutX="423.0" layoutY="37.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="101.0" text="Category" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+            <items>
+                <MenuItem mnemonicParsing="false" text="All" />
+                <MenuItem mnemonicParsing="false" text="Bakery" />
+                <MenuItem mnemonicParsing="false" text="Beverages" />
+                <MenuItem mnemonicParsing="false" text="Diary and Eggs" />
+                <MenuItem mnemonicParsing="false" text="Frozen Foods" />
+                <MenuItem mnemonicParsing="false" text="Fruits" />
+                <MenuItem mnemonicParsing="false" text="Hygiene" />
+                <MenuItem mnemonicParsing="false" text="Meat and Seafood" />
+                <MenuItem mnemonicParsing="false" text="Snacks" />
+                <MenuItem mnemonicParsing="false" text="Vegetables" />
+                <MenuItem mnemonicParsing="false" text="Other" />
+            </items>
+        </MenuButton>
+      <Button fx:id="Import" layoutX="381.0" layoutY="50.0" mnemonicParsing="false" onAction="#triggerImport" prefHeight="28.0" prefWidth="64.0" text="Import" AnchorPane.rightAnchor="128.0" AnchorPane.topAnchor="50.0" />
+      <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="31.0" layoutY="22.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+         <image>
+            <Image url="@../images/logoo.png" />
+         </image>
+      </ImageView>
+      <DatePicker fx:id="datefrom" layoutX="234.0" layoutY="17.0" prefHeight="25.0" prefWidth="100.0" promptText="From" AnchorPane.rightAnchor="315.0" AnchorPane.topAnchor="17.0" />
+      <DatePicker fx:id="dto" layoutX="322.0" layoutY="17.0" prefHeight="23.0" prefWidth="100.0" promptText="To" AnchorPane.rightAnchor="207.0" AnchorPane.topAnchor="17.0" />
+      <Button fx:id="reset" layoutX="349.0" layoutY="50.0" mnemonicParsing="false" onAction="#resetFilters" prefHeight="28.0" prefWidth="64.0" text="Reset" AnchorPane.rightAnchor="197.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="dsort" layoutX="224.0" layoutY="50.0" mnemonicParsing="false" onAction="#triggersort" prefHeight="28.0" prefWidth="114.0" text="Sort date asc" AnchorPane.rightAnchor="272.0" AnchorPane.topAnchor="50.0" />
+      <Button fx:id="dsort1" layoutX="100.0" layoutY="50.0" mnemonicParsing="false" onAction="#triggerreversesort" prefHeight="28.0" prefWidth="114.0" text="Sort date desc" AnchorPane.rightAnchor="396.0" AnchorPane.topAnchor="50.0" />
+        <Text fx:id="delete" fill="#339900" layoutX="51.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font></Text>
+    </children>
+   <opaqueInsets>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </opaqueInsets>
+</AnchorPane>

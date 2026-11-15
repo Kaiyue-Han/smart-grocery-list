@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtasks.javafx.controller.MainViewController">
+   <children>
+      <TabPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab fx:id="GroceryCatalogView" closable="false" text="Grocery Catalogue">
+<!--            this is a link to an external fxml file  becareful while seperating files always should include them-->
+            <content>
+              <fx:include source="groceryCatalogView.fxml" />
+            </content>
+          </Tab>
+          <Tab closable="false" text="Grocery List">
+<!--            this is external file for grocery list -->
+            <content>
+              <fx:include source="groceryListView.fxml" /> </content>
+          </Tab>
+            <Tab closable="false" text="Past Purchases">
+              <content>
+                <fx:include source="pastPurchasesView.fxml" /></content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

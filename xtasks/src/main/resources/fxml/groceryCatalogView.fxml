@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtasks.javafx.controller.GroceryCatalogViewController">
+    <children>
+        <TableView fx:id="tableView" layoutX="6.0" layoutY="67.0" prefHeight="303.0" prefWidth="579.0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0">
+            <columns>
+                <TableColumn fx:id="imageColumn" prefWidth="75.0" text="Image" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name   ↕" />
+                <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category   ↕" />
+                <TableColumn fx:id="quantityColumn" prefWidth="75.0" sortable="false" text="Quantity" />
+                <TableColumn fx:id="unitColumn" prefWidth="75.0" sortable="false" text="Unit" />
+                <TableColumn fx:id="addToCartColumn" prefWidth="120.0" text="Add to Grocery List" />
+                <TableColumn fx:id="deleteColumn" prefWidth="180.0" text="Delete from Grocery Catalog" />
+                <TableColumn fx:id="editItemColumn" prefWidth="75.0" text="Edit " />
+            </columns>
+        </TableView>
+        <Button fx:id="additem" layoutX="266.0" layoutY="9.0" maxHeight="40.0" maxWidth="200.0" mnemonicParsing="false" onAction="#addButtonAction" prefHeight="28.0" prefWidth="150.0" text="Add Grocery Item" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="15.0" />
+        <TextField fx:id="searchBar" layoutX="425.0" layoutY="8.0" prefHeight="28.0" prefWidth="180.0" promptText="Search item here" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="21.0" layoutY="12.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+            <image>
+                <Image url="@../images/logoo.png" />
+            </image>
+        </ImageView>
+        <Text fill="#f7810c" fontSmoothingType="LCD" layoutX="59.0" layoutY="37.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MyShopList" underline="true" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+      <MenuButton fx:id="category" layoutX="420.0" layoutY="37.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="180.0" text="Category" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+          <items>
+              <MenuItem fx:id="all" mnemonicParsing="false" text="All" />
+              <MenuItem mnemonicParsing="false" text="Bakery" />
+              <MenuItem mnemonicParsing="false" text="Beverages" />
+              <MenuItem mnemonicParsing="false" text="Diary and Eggs" />
+              <MenuItem mnemonicParsing="false" text="Frozen Foods" />
+              <MenuItem mnemonicParsing="false" text="Fruits" />
+              <MenuItem mnemonicParsing="false" text="Hygiene" />
+              <MenuItem mnemonicParsing="false" text="Meat and Seafood" />
+              <MenuItem mnemonicParsing="false" text="Snacks" />
+              <MenuItem mnemonicParsing="false" text="Vegetables" />
+              <MenuItem mnemonicParsing="false" text="Other" />
+          </items>
+      </MenuButton>
+      <Text fx:id="congrats" fill="#339900" layoutX="208.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Text>
+      <Text fx:id="error" layoutX="220.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Text fx:id="deletefeedback" fill="#339900" layoutX="194.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font size="14.0" />
+         </font></Text>
+      <Button fx:id="suggestion" mnemonicParsing="false" onAction="#suggestionAction" prefHeight="23.0" prefWidth="579.0" style="-fx-background-color: #DCDCDC;" text="Suggestion" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <VBox fx:id="vbox" prefHeight="297.0" prefWidth="599.0" style="-fx-background-color: #F5F5F5;" AnchorPane.bottomAnchor="-297.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="close" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: #DCDCDC;" text="▼" />
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="599.0">
+               <children>
+            
+                                                            <Label text="   Suggestions   " HBox.hgrow="NEVER" />
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button fx:id="addall" minWidth="65.0" mnemonicParsing="false" onAction="#addallAction" prefHeight="23.0" text="Add all" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+                   <Button fx:id="rejectall" mnemonicParsing="false" onAction="#rejectallAction" text="Reject all" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="stableView" prefHeight="232.0" prefWidth="599.0">
+              <columns>
+                  <TableColumn fx:id="snameColumn" prefWidth="75.0" text="Name   ↕" />
+                  <TableColumn fx:id="scategoryColumn" prefWidth="75.0" text="Category   ↕" />
+                  <TableColumn fx:id="squantityColumn" prefWidth="75.0" text="Quantity" />
+                  <TableColumn fx:id="sunitColumn" prefWidth="75.0" text="Unit" />
+                  <TableColumn fx:id="saddColumn" prefWidth="75.0" text="Add" />
+                  <TableColumn fx:id="rejectColumn" prefWidth="75.0" text="Reject" />
+                  <TableColumn fx:id="reasonColumn" prefWidth="130.0" text="Reason" />
+              </columns>
+            </TableView>
+         </children></VBox>
+    </children>
+</AnchorPane>

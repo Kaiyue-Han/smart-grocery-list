@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="385.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtasks.javafx.controller.GroceryListViewController">
+    <children>
+      <TextField fx:id="searchBar" layoutX="427.0" layoutY="9.0" prefHeight="28.0" prefWidth="180.0" promptText="Search" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+        <TableView fx:id="tableView" layoutX="6.0" layoutY="67.0" prefHeight="303.0" prefWidth="600.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="90.0">
+            <columns>
+                <TableColumn fx:id="imageColumn" prefWidth="75.0" text="Image" />
+                <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name   ↕" />
+                <TableColumn fx:id="categoryColumn" prefWidth="75.0" text="Category   ↕" />
+                <TableColumn fx:id="quantityColumn" prefWidth="75.0" sortable="false" text="Quantity" />
+                <TableColumn fx:id="unitColumn" prefWidth="75.0" sortable="false" text="Unit" />
+                <TableColumn fx:id="checkboxColumn" prefWidth="75.0" text="Select" />
+                <TableColumn fx:id="deleteColumn" prefWidth="75.0" text="Delete" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="purchaseItem" layoutX="260.0" layoutY="37.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="Purchase items" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="50.0" />
+        <Button fx:id="removeItem" layoutX="260.0" layoutY="9.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="Remove all items" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="15.0" />
+        <ImageView fitHeight="43.0" fitWidth="44.0" layoutX="21.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0">
+
+            <image>
+                <Image url="@../images/logoo.png" />
+            </image>
+        </ImageView>
+        <Text fill="#f7810c" fontSmoothingType="LCD" layoutX="59.0" layoutY="25.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="MyShopList" underline="true" AnchorPane.leftAnchor="65.0" AnchorPane.topAnchor="25.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Text>
+      <MenuButton fx:id="category" ellipsisString="" layoutX="425.0" layoutY="38.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="180.0" text="Select category" textAlignment="CENTER" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
+        <items>
+            <MenuItem mnemonicParsing="false" text="All" />
+            <MenuItem mnemonicParsing="false" text="Bakery" />
+            <MenuItem mnemonicParsing="false" text="Beverages" />
+            <MenuItem mnemonicParsing="false" text="Diary and Eggs" />
+            <MenuItem mnemonicParsing="false" text="Frozen Foods" />
+            <MenuItem mnemonicParsing="false" text="Fruits" />
+            <MenuItem mnemonicParsing="false" text="Hygiene" />
+            <MenuItem mnemonicParsing="false" text="Meat and Seafood" />
+            <MenuItem mnemonicParsing="false" text="Snacks" />
+            <MenuItem mnemonicParsing="false" text="Vegetables" />
+            <MenuItem mnemonicParsing="false" text="Other" />
+        </items>
+      </MenuButton>
+      <Text fx:id="delete" fill="#339900" layoutX="51.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Text>
+      <Text fx:id="success" fill="#339900" layoutX="65.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="170.0" AnchorPane.topAnchor="60.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+    </children>
+</AnchorPane>

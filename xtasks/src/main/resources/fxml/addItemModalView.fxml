@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xtasks.javafx.controller.AddItemModalViewController">
+   <ImageView fitHeight="450.0" fitWidth="350.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <image>
+         <Image url="@../images/background.jpg" />
+      </image>
+   </ImageView>
+    <Text fill="WHITE" layoutX="100.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category" wrappingWidth="66.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+    </Text>
+   <MenuButton fx:id="categoryBox" layoutX="100.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Category">
+     <items>
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Bakery" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Beverages" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Diary and Eggs" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Frozen Foods" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Fruits" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Hygiene" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Meat and Seafood" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Snacks" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Vegetables" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionCategory" text="Other" />
+     </items>
+   </MenuButton>
+   <Text fill="WHITE" layoutX="100.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item name" wrappingWidth="78.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+    <TextField fx:id="nameTextField" layoutX="100.0" layoutY="150.0" prefHeight="25.0" prefWidth="151.0" promptText="Eggs, milk, apple.." />
+   <Text fill="WHITE" layoutX="100.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit" wrappingWidth="49.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <MenuButton fx:id="unitBox" layoutX="100.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="151.0" text="Unit">
+     <items>
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionUnit" text="Liter" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionUnit" text="Gram" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionUnit" text="Piece" />
+         <MenuItem mnemonicParsing="false" onAction="#handleSelectionUnit" text="Milliliter" />
+     </items>
+   </MenuButton>
+   <Text fill="WHITE" layoutX="100.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item image (optional)" wrappingWidth="151.0">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Button fx:id="attachimage" layoutX="100.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleAttachImage" prefHeight="25.0" prefWidth="110.0" text="Upload image" />
+   <Text fx:id="textMessage" fill="#000" layoutX="58.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="253.60000000000002" />
+   <Button fx:id="modalButton" layoutX="95.0" layoutY="349.0" mnemonicParsing="false" onAction="#modalButtonAction" prefHeight="25.0" prefWidth="157.0" text="Add grocery item" />
+</AnchorPane>
